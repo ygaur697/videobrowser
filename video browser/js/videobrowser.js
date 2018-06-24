@@ -9,34 +9,26 @@ app.config(function($sceDelegateProvider) {
 app.controller('videoController', ['$scope',
   function MyCtrl($scope) {
 	 $scope.name='';
-
+		console.log("On cntrl")
     $scope.product = [{
       name: 'somename',
       description: 'some description',
-      media: [{
         src: 'v5Asedlj2cw'
-      }]
     },
     {
       name: 'somename1',
       description: 'some description 2',
-      media: [{
         src: 'v5Asedlj2cw'
-      }]
     },
 	{
       name: 'somename2',
       description: 'some description 2',
-      media: [{
         src: 'fN9liaavpc8'
-      }]
     },
 	{
       name: 'somename3',
       description: 'some description 2',
-      media: [{
         src: 'QS9UpbZ3tCA'
-      }]
     }
 					  
 					  
@@ -44,7 +36,9 @@ app.controller('videoController', ['$scope',
     
     ;
 
+		$scope.product.forEach(ele => console.log(ele))
     $scope.getIframeSrc = function(src) {
+			console.log('https://www.youtube.com/embed/' +src)
       return 'https://www.youtube.com/embed/' +src;
     };
   }
