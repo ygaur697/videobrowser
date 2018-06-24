@@ -1,5 +1,5 @@
 # videobrowser
-About
+
 The application takes sample videos from youtube and displays it on the sidebar, The sidebar contains a search box. By typing the name of the video the application sorts it from the name of the video and displays it.
 
 Approach and initial idea
